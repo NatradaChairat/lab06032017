@@ -1,8 +1,12 @@
-package utility;
+package java.utility;
 
+/**
+ * Created by CAMT on 3/13/2017.
+ */
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.core.Is.is;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 
 public class GradeCalculatorTest {
     @Test
