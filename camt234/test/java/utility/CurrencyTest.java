@@ -12,12 +12,14 @@ import static org.hamcrest.number.IsCloseTo.closeTo;
 public class CurrencyTest {
     @Test
     public void testExchange() {
+        Currency currency = new Currency();
         //the double equal is check for the third digit precision (the second
         // paramether)).you may fix the second parameter
         //the first parameter of the closeTo is the value which will be check
         // the return value of the exchange method
 
         assertThat(currency.exchange("USD", 1.0, "USD"), closeTo(1.0, 0.001));
+        assertThat(currency.exchange("USD", 33.0, "THB"), closeTo(1.0, 0.001));
     }
 
 }
